@@ -9,12 +9,18 @@
     <link rel="icon" type="image/x-icon" href="school_logo.png">
 </head>
  <body style="background-color: #0e1722">
-    <div class="center" style="position: relative; text-align: center; color: white; height: 100vh; display: inline-block;">
+    <div class="center hide-on-small-only" style="position: relative; text-align: center; color: white; height: 100vh; display: inline-block;">
         <img src="img.png" style="object-fit: cover; overflow: hidden; height: 100%;" width="100%" >
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <img src="4IT50.png" style="height: 18rem; margin-left: 11vh;">
+            <img src="4IT50.png" style="height: 35vh; margin-left: 11%;">
             <h1 class="typing" id="page_title" style="font-size: 86px;">50 de ani de informatică</h1>
-            <p style="font-size: 42px">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="center hide-on-med-and-up" style="position: relative; text-align: center; color: white; height: 100vh; display: inline-block;">
+        <img src="img_m.png" style="object-fit: cover; overflow: hidden; height: 100%;" width="100%" >
+        <div style="position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="4IT50.png" style="height: 20vh; margin-left: 13%;">
+            <p style="font-size: 3.5rem;">50 ani de informatică</p>
         </div>
     </div>
     <style>
@@ -59,13 +65,41 @@
             margin-top: 1vh!important
 
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .ocazie {
+            background-color: #0d212e; 
+            border: 5px solid #01b5bf; 
+            margin-top: -10vh; 
+            
+        }
+        @media only screen and (min-width: 600px) {
+            .ocazie {
+                margin: 10vw;
+                margin-top: 0vh;
+                margin-bottom: 5vh;
+            }
+        }
+
     </style>
     <div class="row">
         <div class="col s12">
-            <div class="card" style="background-color: #0d212e; border: 5px solid #01b5bf; margin: 20vh; margin-top: 0; margin-bottom: 5vh;">
+            <div class="card ocazie">
                 <div class="card-content white-text">
-                    <span class="card-title center" style="font-size: 48px;">Ocazie</span><br>
-                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate officiis architecto, consequuntur nam veniam, corrupti quidem doloribus odit magnam, sapiente quod porro deleniti nulla! Corporis vitae qui deserunt itaque maxime quibusdam facilis excepturi ipsum eligendi nulla nemo temporibus consequatur incidunt similique molestiae, earum rerum fugiat quaerat? Eum, consectetur rem quod, minima voluptates tenetur aliquid obcaecati, ad quibusdam mollitia nisi id harum. Porro iste aut aperiam, culpa ex eum. Quam, sit praesentium? Vitae, reiciendis? Aperiam dolores nesciunt facere necessitatibus provident nihil nulla repellendus reprehenderit, possimus fugit quo quasi est fuga magnam voluptatum nam obcaecati, quisquam incidunt velit repellat? Incidunt, ut!</p>
+                    <h1 style="margin-bottom: 5vh; margin-top: 1vh" class="center">Ocazie</h1>
+                    <p>
+                        4IT50 este evenimentul care reunește dezideratul celor patru licee de informatică înființate acum 50 de ani. Ne-am reunit pentru a celebra semicentenarul, reconectați la amintirile genezei, dar cu privirea în continuare spre viitor și ne-am propus să actualizăm cu acest prilej o serie de activități care ne definesc.Cine suntem? Ce ne-am propus? 
+                        <br>Să facem ce știm mai bine:
+                        <ul>
+                            <li>1.	Concurs de proiecte IT, reunind elevi din fiecare școală</li>
+                            <li>2.	Workshopuri susținute de foști elevi</li>
+                            <li>3.	Împărtășirea unui film aniversar</li>
+                        </ul>
+                        <p>La noi, universul e bine stabilizat pe clasicii piloni ai PROGRAMĂRII. Tocmai de aceea, vă punem la dispoziție încă de pe acum <a class="hide-on-small-only" onclick="window.scrollTo(0, 1750);" style="cursor: pointer;">calendarul detaliat al evenimentului</a><a class="hide-on-med-and-up" onclick="window.scrollTo(0, 3250);">calendarul detaliat al evenimentului</a>></p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,7 +108,8 @@
                 <div class="card-content">
                     <span class="card-title center" style="font-size: 48px;margin-top: 3vh; margin-bottom: 6vh; color: #01b5bf">Organizatori</span><br>
                     <div class="row">
-                        <div class="col s3">
+                        <div class="col s12 m3">
+                            <a href="http://www.liis.ro">
                             <div class="card" style="background-color: #18394f;">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator img" src="moisil_logo.png">
@@ -87,48 +122,55 @@
                                     </span>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col s3">
-                            <div class="card" style="background-color: #18394f;">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator img" src="Logo_Vianu.png">
+                        <div class="col s12 m3">
+                            <a href="http://portal.lbi.ro">
+                                <div class="card" style="background-color: #18394f;">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator img" src="Logo_Vianu.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator center white-text">
+                                            <p class="royal">Colegiul Național de Informatică</p> 
+                                            <p class="name">„Tudor Vianu”</p> 
+                                            <p class="local">București</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator center white-text">
-                                        <p class="royal">Colegiul Național de Informatică</p> 
-                                        <p class="name">„Tudor Vianu”</p> 
-                                        <p class="local">București</p>
-                                    </span>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col s3">
-                            <div class="card" style="background-color: #18394f;">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator img" src="logo_popoviciu.png">
+                        <div class="col s12 m3">
+                            <a href="http://www.tpopoviciu.ro">
+                                <div class="card" style="background-color: #18394f;">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator img" src="Logo_Popoviciu.jpeg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator center white-text">
+                                            <p class="royal">Liceul de Informatică</p> 
+                                            <p class="name">„Tiberiu Popoviciu”</p> 
+                                            <p class="local">Cluj-Napoca</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator center white-text">
-                                        <p class="royal">Liceul de Informatică</p> 
-                                        <p class="name">„Tiberiu Popoviciu”</p> 
-                                        <p class="local">Cluj-Napoca</p>
-                                    </span>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col s3">
-                            <div class="card" style="background-color: #18394f;">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator img" src="grigore_logo.png">
+                        <div class="col s12 m3">
+                            <a href="http://info.tm.edu.ro">
+                                <div class="card" style="background-color: #18394f;">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator img" src="Logo_grigore.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator center white-text">
+                                            <p class="royal">Liceul Teoretic</p> 
+                                            <p class="name">„Grigore Moisil”</p> 
+                                            <p class="local">Timișoara</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator center white-text">
-                                        <p class="royal">Liceul Teoretic</p> 
-                                        <p class="name">„Grigore Moisil”</p> 
-                                        <p class="local">Timișoara</p>
-                                    </span>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -140,16 +182,24 @@
                     <span class="card-title"><h2>Calendarul Evenimentului</h2></span>
                     <ul class="collapsible" style="border: 0">
                         <li>
-                            <div class="collapsible-header" style="background-color: #18394f;">Prima zi</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header" style="background-color: #18394f;">19 aprilie</div>
+                            <div class="collapsible-body"><span>Deschiderea evenimentului</span></div>
                         </li>
                         <li>
-                            <div class="collapsible-header" style="background-color: #18394f;">A doua zi</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header" style="background-color: #18394f;">20 aprilie</div>
+                            <div class="collapsible-body"><span>Evaluarea proiectelor</span></div>
                         </li>
                         <li>
-                            <div class="collapsible-header" style="background-color: #18394f;">A treia zi</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header" style="background-color: #18394f;">21 aprilie</div>
+                            <div class="collapsible-body"><span>Workshopuri realizate de foști absolvenți sau de sponsori pentru actualii elevi</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" style="background-color: #18394f;">22 aprilie</div>
+                            <div class="collapsible-body"><span>Galeria virtuală de proiecte - în care echipele vor fi vizate și vor putea să-și prezinte produsele în fața publicului</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" style="background-color: #18394f;">23 aprilie</div>
+                            <div class="collapsible-body"><span>Festivitatea de încheiere a evenimentului</span></div>
                         </li>
                     </ul>
                 </div>
@@ -166,10 +216,9 @@
             <div class="col l4 offset-l2 s12">
               <h5>Links</h5>
               <ul>
-                <li><a href="#!">Link 1</a></li>
-                <li><a href="#!">Link 2</a></li>
-                <li><a href="#!">Link 3</a></li>
-                <li><a href="#!">Link 4</a></li>
+                <li><a href="siglă(1).pdf">Afiș 1</a></li>
+                <li><a href="siglă(2).jpeg">Afiș 2</a></li>
+                <li><a href="sigle.html">Sigle</a></li>
               </ul>
             </div>
           </div>
@@ -184,10 +233,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems);
-        var elems = document.querySelectorAll('.collapsible');
-        var instances = M.Collapsible.init(elems);
+        var elems = [document.querySelectorAll('.parallax'), document.querySelectorAll('.collapsible')]
+        var instances = M.Parallax.init(elems[0]);
+        var instances = M.Collapsible.init(elems[1]);
     });
 </script>
 </html>
