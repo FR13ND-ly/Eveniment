@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurs</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/x-icon" href="school_logo.png">
+</head>
+ <body style="background-color: #0e1722">
+     <div class="hide-on-small-only" style="position: fixed; left: 1vw; top: 90vh; z-index: 99999">
+         <a class="btn waves-effect waves-light purple" title="workshop-uri"  href="/workshop-uri.html">WorkShop-uri</a>
+         <a class="btn waves-effect waves-light blue" title="pagina principală"  href="/">Pagina Principală</a>
+     </div>
+     <div class="hide-on-med-and-up" style="position: fixed; right: 1vw; top: 80vh; z-index: 99999">
+        <a class="btn-floating btn-large waves-effect waves-light purple" title="workshop-uri"  href="/workshop-uri.html"><i class="material-icons">build</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light blue" title="pagina principală"  href="/"><i class="material-icons">home</i></a>
+     </div>
+      <div class="navbar-fixed hide-on-med-and-up z-depth-5">
+        <div class="center" style="position: fixed; padding-top: 5px; margin: 0 auto;z-index: 10; background-color: #18394f; width: 100%;">
+            <a href="http://www.liis.ro">
+                <img class="circle pulsation hoverable activator" src="dmoisil_logo.png" style="height: 9vh;" >
+            </a>
+            <a href="http://portal.lbi.ro">
+                <img class="circle pulsation hoverable activator" src="dLogo_Vianu.png" style="height: 9vh; margin-left: 2vw" >
+            </a>
+            <a href="http://www.tpopoviciu.ro">
+                <img class="circle pulsation hoverable activator" src="dLogo_Popoviciu(1).png" style="height: 9vh; margin-left: 2vw" >
+            </a>
+            <a href="http://info.tm.edu.ro">
+                <img class="circle pulsation hoverable activator" src="dLogo_grigore.png" style="height: 9vh; margin-left: 2vw" >
+            </a>
+        </div>
+     </div>
+     <a href="/"><div class="hide-on-med-and-up center valign-wrapper" style="color: white; height: 100vh">
+        <div class="white-text" style="margin: 0 auto">
+            <img src="m.png" style="height: 15vh; margin-left:10vw">
+            <h1 style="font-size: 20px;">Patru Licee de Informatică</h1> 
+            <h1 style="font-size: 30px;">La puterea a 50 de ani</h1>
+        </div>
+    </div></a>
+    <div class="hide-on-small-only" style="height: 50vw; width: 100%;">
+        <a href="/"><div style="margin-top: 8vh; margin-left: 8vw" class="white-text">
+            <img src="m.png" style="height: 40vh; margin-left: 2vw;">
+            <h1 style="font-size: 45px; margin-top: 10vh;">Patru Licee de Informatică</h1> 
+            <h1 style="font-size: 70px;">La puterea a 50 de ani</h1>
+        </div>
+    </a>
+        <div style="position: absolute; z-index: 9; right: 1vw; top: -1.5vh; margin-right: 2vw;" class="center">
+            <a href="http://www.liis.ro" style="display: block; margin-top: 5vh; cursor: pointer">
+                <img class="circle hoverable activator" src="dmoisil_logo.png" style="width: 6vw;" >
+                <p class="royal white-text">Liceul Teoretic de Informatică Iași</p> 
+                <p class="name white-text">„Grigore Moisil”</p>
+            </a>
+            <a href="http://portal.lbi.ro" style="display: block; margin-top: 1vh; cursor: pointer">
+                <img class="circle hoverable activator" src="dLogo_Vianu.png" style="width: 6vw;" >
+                <p class="royal white-text">Colegiul Național de Informatică București</p> 
+                <p class="name white-text">„Tudor Vianu”</p>
+            </a>
+            <a href="http://www.tpopoviciu.ro" style="display: block; margin-top: 1vh; cursor: pointer">
+                <img class="circle hoverable activator" src="dLogo_Popoviciu(1).png" style="width: 6vw" >
+                <p class="royal white-text">Liceul de Informatică Cluj-Napoca</p> 
+                <p class="name white-text">„Tiberiu Popoviciu”</p>
+            </a>
+            <a href="http://info.tm.edu.ro" style="display: block; margin-top: 1vh; cursor: pointer">
+                <img class="circle hoverable activator" src="dLogo_grigore.png" style="width: 6vw;" >
+                <p class="royal white-text">Liceul Teoretic Timișoara</p> 
+                <p class="name white-text">„Grigore Moisil”</p>
+            </a>
+        </div>
+        
+    </div>
+    
+    <style>
+        
+        @keyframes pulse {
+            0% {padding: .2vh;}
+            50% {padding: 0}
+            100% {padding: .2vh;}
+        }
+        
+        .img {
+            object-fit: cover; 
+            overflow: hidden; 
+            height: 270px;
+        }
+
+        .royal {
+            font-size: .55rem;
+        }
+
+        .name {
+            margin-top: .5vh;
+            font-size: 1rem;
+        }
+
+        .local {
+            font-size: 1rem;
+
+        }
+
+        .ocazie {
+            background-color: #0e1722; 
+            margin-top: -10vh; 
+            
+        }
+        .img2 {
+            object-fit: cover; 
+            overflow: hidden; 
+            height: 270px;
+        }
+
+        .royal2 {
+            font-size: 1rem;
+        }
+
+        .name2 {
+            font-size: 2rem;
+        }
+
+        .local2 {
+            font-size: 1.5rem;
+            margin-top: 1vh!important
+
+        }
+        @media only screen and (min-width: 600px) {
+            .ocazie {
+                margin: 5vw;
+                margin-top: 0vh;
+                margin-bottom: 5vh;
+            }
+        }
+
+    </style>
+    <div class="row">
+        
+        <h1 class="center white-text" id="projects">Galeria de Proiecte</h1>
+        <div class="card col s12" style="background-color: #18394f; margin-bottom: 3rem">
+            <div class="card-content">
+                <span class="card-title white-text">Programarea demonstrațiilor pe ore</span>
+                <table class="white-text striped">
+                    <thead>
+                        <tr>
+                            <th>Ora</th>
+                            <th>Număr și numele echipei</th>
+                            <th>Număr și numele echipei</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>15</td>
+                            <td>1. 5IT</td>
+                            <td>11. MakeIT</td>
+                          </tr>
+                          <tr>
+                            <td>15.15</td>
+                            <td>2. Booldogs</td>
+                            <td>12. 4tza info</td>
+                          </tr>
+                          <tr>
+                            <td>15.30</td>
+                            <td>3. GoCreative ok</td>
+                            <td>1. 5IT</td>
+                          </tr>
+                          <tr>
+                            <td>15.45</td>
+                            <td>4. SER</td>
+                            <td>2. Booldogs</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>6. PHIsicsMasters</td>
+                            <td>3. GoCreative</td>
+                          </tr>
+                          <tr>
+                            <td>16.15</td>
+                            <td>7. 5BrainCells</td>
+                            <td>4. SER</td>
+                          </tr>
+                          <tr>
+                            <td>16.30</td>
+                            <td>8. Mind Squared</td>
+                            <td>6. PHIsicsMasters</td>
+                          </tr>
+                          <tr>
+                            <td>16.45</td>
+                            <td>9. Țestoasele Ninja</td>
+                            <td>7. 5BrainCells</td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td>10. SchoolSoft</td>
+                            <td>8. Mind Squared</td>
+                          </tr>
+                          <tr>
+                            <td>17.15</td>
+                            <td>11. MakeIT</td>
+                            <td>9. Țestoasele Ninja</td>
+                          </tr>
+                          <tr>
+                            <td>17.30</td>
+                            <td>12. 4tza info</td>
+                            <td>10. SchoolSoft</td>
+                          </tr>
+                          <tr>
+                            <td>17.45</td>
+                            <td>Încheiere Program</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h3 class="white-text center" >Lista proiectelor educaționale realizate de elevi la concursul 4IT50</h3>
+        <div class="col l6 s12">
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h3>1. 5IT</h3>
+                            <a style="display: block" href="https://drive.google.com/file/d/1A1HcEs_4pM4VGRqK5LqSwqZZ9UP8gVbh/view?usp=sharing">Video</a>
+                            <h5>Mentor:</h5> Ninu-Ciprian Marginean
+                            <h5>Elevi:</h5>	
+                            <b>Iancu Julien</b>		Cluj-Napoca<br>
+                            <b>Maxim Teodor</b>		Timișoara<br>
+                            <b>Romanescu Adia-Ioana</b>	Iasi<br>
+                            <b>Dobocan Raul</b>		Cluj-Napoca<br>
+                            <b>Tudose Matei</b> București<br>
+                            <h5>Titlul proiectului:</h5>        Eseuri
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Platforma web Eseuri își propune să îmbunătățească eficiența învățării elevilor din clasele de liceu care se pregătesc pentru proba de limba și literatura română de la bacalaureat, să încurajeze e-learning-ul și utilizarea de materiale didactice rezumative și să atenueze stresul pe care îl provoacă pregătirea pentru BAC. Prin includerea unui set de opțiuni variat cum ar fi încărcarea de referate, corectarea acestora de către profesori de limba română din România, accesul la conținutului aprobat și corectat de către profesori care se garantează a fi realizat în conformitate cu baremul examenului național și care ar obține o notă foarte apropiată de cea maximă. Considerând contextul pandemic, site-ul Eseuri  vine în completarea orelor de curs și, știind că se estimează că adolescenții petrec cel puțin 7 ore pe zi în medie pe dispozitive electronice, este o soluție foarte accesibilă pentru liceeni.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <h2>3. GoCreative</h2>
+                    <a style="display: block" href="https://drive.google.com/file/d/1jHcbMAdUJ89csMfYw5H3IRuxL01K0gGx/view?usp=sharing">Video</a>
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h5>Mentor:</h5> Crețu Silvian
+                            <h5>Elevi:</h5>	
+                            <b>Dumitrescu Toma-Ioan</b>		București<br>
+                            <b>Radu Alexandru-Mihai</b>		Cluj-Napoca<br>
+                            <b>Tanasă Paul-Iulian</b>		Iași<br>
+                            <b>Tulbure Alexandru Nicolae</b>	Timișoara<br>
+                            <b>Ghitescu Ioana</b>			București<br>
+                            <h5>Titlul proiectului:</h5> Dixi
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Impreună am vrut să realizăm o aplicație ajutatoare pentru una dintre cele mai stresante și importante, din punct de vedere educațional,  perioade prin care am trecut cu toții până acum: evaluarea de la sfârșitul primilor 8 ani de scoala. De aceea, am creat DIXI, o aplicație care te ajuta sa înțelegi mai mult decât sensul propriu al frazei, cât și conținutul ei structural și compozițional, prin simpla analiza morfologică.  DIXI e un dicționar menit să ușureze și să fluidifice parcursul materiei pentru evaluarea la limba și literatura romana, dar nu numai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h3>6. PHIsicsMasters</h3>
+                            <a style="display: block" href="https://drive.google.com/file/d/1NnlgBO4rQv8j1BHyCYWiTsb0RKsJ8oL9/view?usp=sharing">Video</a>
+                            <h5>Mentor:</h5> Florentin Picioroaga
+                            <h5>Elevi:</h5>	
+                            <b>Coman Tudor Andrei</b>	București<br>
+                            <b>Dolha Catalin</b>		Cluj-Napoca<br>
+                            <b>Costache Radu-Mihai</b>	Iași<br>
+                            <b>Tudor Mihnea Ștefan</b>	Timișoara<br>
+                            <b>Tudorache Lucia Bianca</b>	Timișoara<br>
+                            <h5>Titlul proiectului:</h5> PHIsicsMasters
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Prin aplicația creată ne dorim să venim în ajutorul elevilor, dar și al profesorilor de fizică cu un suport vizual pentru o parte din fenomenele mecanice studiate în clasa a 9-a (planul înclinat, forța elastică, mișcarea rectilinie). Aplicatia vine cu o librarie de fenomene mecanice de baza si poate fi astfel folosita de catre profesori in predarea acestora. In acelasi timp, elevii au posibilitatea de a modela probleme mai complexe ce sunt construite pe aceste fenomene mecanice agregandule intr-un proiect individual. Astfel dupa modelarea unei probleme, elevul poate porni o simulare a fenomenelor modelate si deasemeni poate controla aceasta simulare folosind o axa a timpului.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h2>10. SchoolSoft</h2>
+                            <a style="display: block" href="https://drive.google.com/file/d/1YBQSdhJdV0mx75Y3Ng2u7hOwaFM2I8aI/view?usp=sharing">Video</a>
+                            <h5>Mentor:</h5> Raul Stoin
+                            <h5>Elevi:</h5>	
+                            <b>Alecu Maria-Diana</b>	București<br>
+                            <b>Gosa Bogdan</b>		Cluj-Napoca<br>
+                            <b>Stanciu Bogdan</b>		București<br>
+                            <h5>Titlul proiectului:</h5> SchoolSoft
+                        </div>
+                        <div class="col s12 l6 ">
+                            <h5>Rezumat:</h5>
+                            Prin acest proiect, ne propunem să prezentăm matematica într-un mod inedit copiilor de ciclu primar. Această pandemie a arătat tuturor că tehnologia are un rol important în educația generațiilor care vin, dar elevii mici au nevoie de un sprijin suplimentar pentru a deprinde cunoștințele necesare, deoarece monotonia orelor online nu îi ajută să înțeleagă la fel ca atunci când sunt fizic în clasă. Soluția noastră este aplicația SchoolSoft, care este dezvoltată, momentan, pentru acest grup țintă, cu scopul de a facilita absorbția de informații prin „exerciții-joc” interesante de matematică distractivă. Copiii vor fi atrași de culorile vii, astfel învățând mai multe prin aplicații practice care întăresc ceea ce învață la clasă. În acest mod, matematica devine accesibilă și prietenoasă, iar învățătorul dispune de o unealtă ușor de folosit, utilă atât pentru orele online, cât si pentru cele fizice.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h2>12. 4tza info</h2>
+                            <a style="display: block" href="https://drive.google.com/file/d/19n-ne8hqkTck6_8IRx2SWMYGjXD4Xz74/view?usp=sharing">Video</a>
+                            <h5>Mentor:</h5> Tiberius Dumitriu
+                            <h5>Elevi:</h5>	
+                            <b>Iordan Rareș</b>		Iași<br>
+                            <b>Kulcsar Noemi</b>		Cluj-Napoca<br>
+                            <b>Guiman Albert</b>		București<br>
+                            <b>Crismariu Codrin</b>	Iași<br>
+                            <b>Stanica Andrei</b>		Timișoara<br>
+                            <h5>Titlul proiectului:</h5> Brainer
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Proiectul are în centru facilitarea procesului de învățare, vizând elevii dornici de a aprofunda cunoștințele la materiile care le-au provocat anterior dificultăți, prin intermediul unui site. Acesta are la bază atribuirea utilizatorilor unui rol dublu: atât de elev(student), cât și de profesor(mentor). Sunt folosiți algoritmi de determinare a celor mai potrivite opțiuni pentru useri, având în vedere categoria de vârstă (reprezentată de clasă), disciplinele la care excelează, respectiv cele care necesită o altfel de abordare pentru ca informațiile să se sedimenteze. Față de site-urile/aplicațiile similare, proiectul nostru-Brainer- iese în evidență prin feature-ul de matching, care generează persoana optimă adaptată nevoilor utilizatorului.	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h2>2. Booldogs</h2>
+                            <a style="display: block" href="https://youtu.be/rfHYqt7Co2M">Video</a>
+                            <h5>Mentor:</h5> Flavius Platon
+                            <h5>Elevi:</h5>	
+                            <b>Ioncioaia Călin</b>		Iași<br>
+                            <b>Turcin Gabriel-Marian</b>	Timișoara<br>
+                            <b>Andreea Munteanu</b>	București<br>
+                            <b>Lung Ana-Otilia</b>		Cluj-Napoca<br>
+                            <b>Rata Sorin</b>		Timișoara<br>
+                            <h5>Titlul proiectului:</h5>        Painting Class
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Aplicația dezvoltată de noi are ca scop principal facilitarea profesorilor cu unelte necesare pentru a interactiona cu elevii din mediul online. Aceasta aplicație consta intr-o tabla interactiva pe care fiecare elev poate scrie, ca apoi aceasta să poată fi văzută de către profesor. El are și opțiunea de a partaja tabla oricărui elev la toți participantii întâlnirii (pentru a arata clasei soluția corectă a unui exercițiu, de exemplu), dar și a de a copia tabla unui elev pentru a o corecta. Pentru a face folosirea materialului didactic în mediul digital cât mai ușoară, aceasta aplicație include unelte pentru manipularea fotografiilor, PDF-urilor si screenshoturilor. Aplicație este scrisă în C# și WPF, folosind tehnologii și metode moderne.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <h2>4. SER</h2>
+                    <a style="display: block" href="https://www.youtube.com/watch?v=lOIQ6fmOz-U">Video</a>
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h5>Mentor:</h5> Mihaela Bulgaru
+                            <h5>Elevi:</h5>	
+                            <b>Gheorghieș Alexandru</b>	Iași<br>
+                            <b>Buia Aurelian</b>		Cluj-Napoca<br>
+                            <b>Sion Denis</b>		Timișoara<br>
+                            <b>Stoleru Andrei</b>		Iași<br>
+                            <b>Tudor Alexandru</b>		București<br>
+                            <h5>Titlul proiectului:</h5> SER
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Aplicația Susținem Elitele României este menită să centralizeze toate olimpiadele și concursurile școlare într-un singur website. Acestea pot fi căutate foarte rapid folosind live-search-ul nostru. Website-ul este bazat pe roluri, iar toți care au rolul de organizator pot organiza concursuri, evident, dacă acestea vor fi aprobate pe admin, alt rol al site-ului. La sfârșitul concursului/olimpiadei, clasamentul se poate vedea tot pe site-ul nostru.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h2>7. 5BrainCells</h2>
+                            <a style="display: block" href="https://drive.google.com/file/d/11zbQv722pMp6NEwelwX-sZ1lupYdFpj0/view?usp=sharing">Video</a>
+                            <h5>Mentor:</h5> Stefanu Turcu
+                            <h5>Elevi:</h5>	
+                            <b>Cainamisir Vlad</b>		București<br>
+                            <b>Mitreanu Alex</b>		Iași<br>
+                            <b>Mîrzoca Radu Casian</b>	Timișoara<br>
+                            <h5>Titlul proiectului:</h5> Studyrooms
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Studyrooms este o platforma gratuită pentru tinerii elevi din România care își doresc să învețe într-un mediu academic colaborativ pentru a-și întări cunoștințele deja existente și a acumula informații și experiențe noi. Platforma noastră creează un cadru educațional bazat pe materiile din programa școlară unde elevii se pot ajuta reciproc cu ușurință prin intermediul interfaței noastre intuitive. Fie că este prin intermediul mesajelor, pozelor, atașamentelor sau apelurilor video în grupuri de până la 10 persoane, fiecare elev poate contribui activ la comunitatea Studyrooms și a ajuta liceeni din toate colțurile țării. Toți utilizatorii platformei pot fi siguri că informațiile lor, mesajele trimise în aplicație și conferințele video sunt protejate folosind metodele consacrate din domeniul securității cibernetice. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card hoverable" style="background-color: #18394f;">
+                <div class="card-content white-text">
+                    <h2>11. MakeIT</h2>
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <a style="display: block" href="https://youtu.be/B8C2dR9XOBs">Video</a>
+                            <h5>Mentor:</h5> Bogdan Butunoi
+                            <h5>Elevi:</h5>	
+                            <b>Bîrleanu Teodor Matei</b>	București<br>
+                            <b>Chelaru Răzvan</b>		Iași<br>
+                            <b>Sireanu Vlad</b>		Timișoara<br>
+                            <b>Șchiop Bogdan</b>		Cluj-Napoca<br>
+                            <h5>Titlul proiectului:</h5> LearnBook
+                        </div>
+                        <div class="col s12 l6">
+                            <h5>Rezumat:</h5>
+                            Aplicația noastră realizează legătura dintre elevi si profesori , ajutând elevii să înțeleagă mai bine materiile studiate și să se pregăteasca pentru teste ,examene sau concursuri. Elevii creează postări în care dau detalii despre subiectul la care au nevoie de ajutor sau pregătire suplimentară ,după care un profesor ia legătura cu elevul.
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card" style="background-color: #18394f;">
+                    <div class="card-content white-text">
+                        <h2>9. Țestoasele Ninja</h2>
+                        <a style="display: block" href="https://youtu.be/0s7pfifPmpc">Video</a>
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <h5>Mentor:</h5> Bogdan Constantin
+                                <h5>Elevi:</h5>	
+                                <b>Michaelides Glafkos Nikolas</b>	București<br>
+                                <b>Ghera Denis-Leonard</b>		Timișoara<br>
+                              <!--  <b>Sireanu Vlad</b>		Timișoara<br> -->
+                                <b>Sandu Theodor</b>			Iași<br>
+                                <b>Racz Antonia-Roxana</b>		Cluj-Napoca<br>
+                                <h5>Titlul proiectului:</h5> Happy Turtles
+                            </div>
+                            <div class="col s12 l6">
+                                <h5>Rezumat:</h5>
+                                Acest proiect are scopul de a încuraja copiii să mențină apele curate prin aplicația noastră web care reprezintă o enciclopedie a animalelor acvatice. Pentru a face totul mai distractiv, am încercat să dezvoltăm un joc bazat pe cunoștințele dobândite din aplicație, care să simuleze una dintre marile probleme cu care ne confruntăm în zilele noastre: contaminarea marină în exces care cauzează pagube majore. Scopul jocului este acela de a ajuta țestoasele să-și facă frații și surorile fericiți, adică restul viețuitoarelor cu care locuiesc în marele ocean.Echipa:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: #18394f;">
+                    <div class="card-content white-text">
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <h3>8. Mind Squared</h3>
+                                <a style="display: block" href="https://www.youtube.com/watch?v=_XLC0ejUsYY">Video</a>
+                                <h5>Mentor:</h5> Cristian Militaru
+                                <h5>Elevi:</h5>	
+                                <b>Anton Petru-Adrian</b>	Iași<br>
+                                <b>Loghin Cătălin</b>		Iași<br>
+                                <b>Mercan Horia</b>		București<br>
+                                <b>Pătru Bianca Maria</b>	Timișoara<br>
+                                <b>Schiop Paul</b>		Cluj-Napoca</b><br>
+                                <h5>Titlul proiectului:</h5> Mind Squared
+                            </div>
+                            <div class="col s12 l6">
+                                <h5>Rezumat:</h5>
+                                Scopul aplicației este de a organiza proiectele de echipă ale elevilor și a economisi eficient timpul acestora.
+                                Rolul esențial al acesteia, prin care se diferențiază de alte soft-uri deja existente, constă în faptul că este o aplicație pentru proiecte de grup. Ea creează în mod automat echipe de elevi (numărul dintr-un grup fiind specificat de profesor) în funcție de competențele lor, având ca scop principal facilitarea și dezvoltarea muncii în echipă. Ideea a pornit de la faptul că toți membrii echipei au un număr foarte mare de grupuri pe platforme de socializare (WhatsApp, Messenger), care sunt într-o dezordine totală ce scade productivitatea.
+                                Aplicația are feature-uri multiple (e un centru de multi-tasking) pentru: comunicare între elevi, organizarea task-urilor, teste etc.
+                                Am ales această idee pentru a simplifica viața elevului în această perioadă, aflându-ne în mediul online, și pentru a evita problemele tehnice rezultate din schimbarea de la o aplicație la alta. Exemplu: în timp ce ești într-un call pe o aplicație dai test pe altă aplicație. 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<table class="white-text highlight">
+            <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>5IT</td>
+                    <td>Website de eseuri și comentarii</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Booldogs</td>
+                    <td>Tabla sincronizata intre elevi si profesori</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>GoCreative</td>
+                    <td>Analizator sintactică și morfologic</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>SER</td>
+                    <td>Platformă de centralizare a concursurilor și a olimpiadelor</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>PHIsicsMasters</td>
+                    <td>Analizarea practica a unui sistem fizic</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>5BrainCells</td>
+                    <td>Platforma cu camere de studiu internaționale</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Mind Squared</td>
+                    <td>Gestionare proiecte de echipa</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Țestoasele Ninja</td>
+                    <td>Site + Joc tip quiz educational</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>SchoolSoft</td>
+                    <td>Aplicație de e-learning pentru matematică</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>MakeIT</td>
+                    <td>Platformă de meditații online</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>4tza info</td>
+                    <td>Mediu educativ pe baza de video-uri</td>
+                  </tr>
+            </tbody>
+        </table> -->
+    <div class="row">
+        <div class="card col l8 s12 offset-l2">
+            <div class="card-content">
+                <h3 class="center" style="padding-top: 3rem"><b>Suporteri</b></h3>
+                <div class="carousel">
+                    <a class="carousel-item" style="cursor: pointer"><img src="fmi.png"></a>
+                    <a class="carousel-item" style="cursor: pointer"><img src="tvr-cluj.png"></a>
+                    <a class="carousel-item" style="cursor: pointer"><img src="scitech-logo-vertical.png"></a>
+                    <a class="carousel-item" style="cursor: pointer"><img src="centric2.png"></a>
+                    <a class="carousel-item" style="cursor: pointer"><img src="popoviciu2.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer " style="background-color: #18394f;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5>4IT50</h5>
+                    <p>Patru Licee de Informatică la puterea a 50 de ani</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5>Link-uri</h5>
+                    <ul>
+                        <li><a href="sigle.html">Sigle</a><a href="https://www.facebook.com/50ani-de-informatica-102787738520438/" style="margin-left: 20px">Facebook</a><a href="https://instagram.com/50ani_de_informatica?r=nametag" style="margin-left: 20px">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2021 Liceul Teoretic de Informatică „Grigore Moisil” Iași
+            </div>
+        </div>
+    </footer>
+</body> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var scrollDiv = document.getElementById("projects").offsetTop;
+        window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+        var elems = [document.querySelectorAll('.parallax'), document.querySelectorAll('.collapsible'), document.querySelectorAll('.modal'), document.querySelectorAll('.carousel')]
+        var instances = M.Modal.init(elems[2]);
+        var instances = M.Parallax.init(elems[0]);
+        var instances = M.Collapsible.init(elems[1]);
+        var instances = M.Carousel.init(elems[3]);
+        
+    });
+</script>
+<script>
+    var allImages = document.getElementsByTagName("img");
+    for(var i = 0, max = allImages.length; i < max; i++){
+        if (allImages[i].src === "https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"){
+            allImages[i].remove();
+            break;
+        }
+    }
+</script>
+</html>
